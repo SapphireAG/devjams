@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gemini Prompt Sender</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 10px;
+      }
+      #response {
+        margin-top: 10px;
+        white-space: pre-wrap;
+      }
+      #promptList {
+        margin-top: 20px;
+        padding: 0;
+        list-style-type: none;
+      }
+      #promptList li {
+        background: #f3f3f3;
+        padding: 5px;
+        margin-bottom: 5px;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Gemini Prompt Sender</h1>
+    <textarea id="prompt" rows="5" cols="30" placeholder="Enter your prompt here..."></textarea><br>
+    <button id="sendPrompt">Send Prompt</button>
+    <div id="response"></div>
+    <ul id="promptList"></ul> <!-- Added list to display saved prompts -->
+    <script src="popup.js"></script>
+  </body>
+</html>
